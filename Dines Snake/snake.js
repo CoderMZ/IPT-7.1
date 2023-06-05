@@ -63,7 +63,10 @@ function update() {
     const newPart = snake.create(oldTailX, oldTailY, 'snake');
     newPart.setOrigin(0);
 
-    food.setPosition(Phaser.Math.Between(0, 39) * 16, Phaser.Math.Between(0, 29) * 16);
+    do {
+      food.setPosition(Phaser.Math.Between(0, 39) * 16, Phaser.Math.Between(0, 29) * 16);
+    } while (checkOverlap(food, snake));
+
   }
 
   const snakeBody = snake.getChildren();
@@ -71,6 +74,14 @@ function update() {
     snakeBody[i + 1].setPosition(snakeBody[i].x, snakeBody[i].y);
   }
 }
+
+function checkOverlap(spriteA, spriteB) {
+  const boundsA = spriteA.getBounds();
+  const boundsB = spriteB.getBounds();
+
+  return Phaser.Geom.Intersects.RectangleToRectangle(boundsA, boundsB);
+}
+
 function create() {
   snake = this.physics.add.group();
 
