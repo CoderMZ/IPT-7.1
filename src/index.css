@@ -1,6 +1,21 @@
+/* Header related CSS */
+
 div.Header-Container
 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
+
+
+
+/* Main Body CSS */
+div.Example-Anim-Container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
