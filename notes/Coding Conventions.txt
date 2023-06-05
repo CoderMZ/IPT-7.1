@@ -1,0 +1,40 @@
+Für HTML 
+
+Immer Classes verwenden für CSS
+
+JSDeliver Script und Link CSS immer nacheinander
+
+Bei Container -> Div
+
+Bei Text -> Jenes normale Text Tag (Sinnvoll nutzen)
+
+Bei Links -> A
+
+-------------------------------------------------------
+
+Für CSS 
+
+Bereiche Abgrenzen mit Kommentaren
+- Header
+- Main Body
+- Weiteres
+- Footer
+
+Keine überflüssige Klassen machen (Bei Wiederholungen universelle Klasse erstellen)
+
+Für gleiches, gleiches verwenden 
+(Bild zentrieren: Falls schon mit Flexbox in anderem CSS gelöst -> bei neuem CSS wieder gleich anwenden)
+
+-------------------------------------------------------
+
+Für JS
+
+Für Klassen
+-PascalCase
+
+Für Funktionen 
+-camelCase
+
+Für Variabeln
+-snake_case7
+
