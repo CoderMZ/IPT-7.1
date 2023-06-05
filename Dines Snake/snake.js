@@ -71,7 +71,24 @@ function update() {
     snakeBody[i + 1].setPosition(snakeBody[i].x, snakeBody[i].y);
   }
 }
+function create() {
+  snake = this.physics.add.group();
+
+  for (let i = 0; i < 3; i++) {
+    const snakePart = snake.create(160 + i * 20, 160, 'snake');
+    snakePart.setOrigin(0);
+  }
+
+  food = this.physics.add.image(Phaser.Math.Between(0, 39) * 16, Phaser.Math.Between(0, 29) * 16, 'food');
+  food.setScale(0.5); // Adjust the scale factor as needed
+
+  this.physics.add.collider(snake, food, eatFood, null, this);
+
+  cursors = this.input.keyboard.createCursorKeys();
+}
 
 function eatFood() {
   food.destroy();
 }
+
+
