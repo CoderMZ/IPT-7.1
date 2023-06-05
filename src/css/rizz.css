@@ -1,0 +1,22 @@
+/* Body Styling */
+body
+{
+    background-color:black;
+}
+
+/* Header Styling */
+div.Header-Container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/* Body Styling */
+div.Body-Container
+{
+    margin: 100px;
+    border: solid white;
+}
+
+
