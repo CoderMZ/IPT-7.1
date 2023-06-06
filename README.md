@@ -12,9 +12,11 @@ Use the  runtime environment [NodeJS](https://nodejs.org/en/download) to execute
 ## Contributor
 [Dines Nimalthas](https://github.com/Reavexx)
 
+[Kevin Weder](https://github.com/KevinWe6)
+
 [Gianmarco Wyss](https://github.com/Giani-Wyss)
 
 [Marvin Zimmermann](https://github.com/CoderMZ)
 
-[Kevin Weder](https://github.com/KevinWe6)
+
 
