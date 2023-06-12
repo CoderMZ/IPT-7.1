@@ -1,67 +1,17 @@
-.body{
-    margin: 0;
+/* Header related CSS */
+
+div.Header-Container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
-
-#navigationbar {
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    margin: 0;
-    padding: 10px;
-  }
-  
-  .logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .logo img {
-    max-height: 50px;
-    max-width: 100%;
-  }
-
-  * {
-    margin: 0;
-    padding: 0;
-
-  
-  #navibar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  #navibar li {
-    margin-right: 10%;
-  }
-  
-  #navibar a {
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-    font-family: 'couture';
-    margin-right: 5%;
-  }
-  
-  #navibar a:hover {
-    color: #5fe893;
-  }
-}
 
 
 /* Main Body CSS */
 div.Example-Anim-Container
 {
-    margin-top: 10%;
     display: flex;
     flex-direction: column;
 }
