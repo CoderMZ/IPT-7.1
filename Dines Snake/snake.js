@@ -11,7 +11,8 @@ const config = {
   scene: {
     preload: preload,
     create: create,
-    update: update
+    update: update,
+    startGame: startGame // New scene for starting the game
   }
 };
 
@@ -22,31 +23,25 @@ let food;
 let cursors;
 let score = 0;
 let scoreText;
+let startText; // Text for the starting screen
+let isGameStarted = false; // Flag to track game start
 
 function preload() {}
 
 function create() {
-  snake = this.physics.add.group();
+  // Add starting screen text
+  startText = this.add.text(220, 200, 'Press SPACE to start', { fontSize: '32px', fill: '#ffffff' });
 
-  for (let i = 0; i < 3; i++) {
-    const snakePart = this.add.rectangle(160 + i * 20, 160, 20, 20, 0x00ff00);
-    snake.add(snakePart);
-  }
-
-  food = this.add.rectangle(
-    Phaser.Math.Between(1, 38) * 20,
-    Phaser.Math.Between(1, 28) * 20,
-    20,
-    20,
-    0xff0000
-  );
-
-  cursors = this.input.keyboard.createCursorKeys();
-
-  scoreText = this.add.text(16, 16, 'Score: 0', { fontSize: '32px', fill: '#ffffff' });
+  // Enable input for starting the game
+  this.input.keyboard.on('keydown-SPACE', startGame, this);
 }
 
 function update() {
+  if (!isGameStarted) {
+    // Don't update the game if it hasn't started
+    return;
+  }
+
   const speed = 4;
   const head = snake.getFirst(true);
   const oldTailX = snake.getLast(true).x;
@@ -85,55 +80,40 @@ function update() {
   }
 }
 
-function checkOverlap(spriteA, spriteB) {
-  const boundsA = spriteA.getBounds();
-  const boundsB = spriteB.getBounds();
+function startGame() {
+  // Remove starting screen text
+  startText.destroy();
 
-  return Phaser.Geom.Intersects.RectangleToRectangle(boundsA, boundsB);
-}
+  // Set the game as started
+  isGameStarted = true;
 
+  // Add game elements
 
-function checkOverlap(spriteA, spriteB) {
-  const boundsA = spriteA.getBounds();
-  const boundsB = spriteB.getBounds();
+  snake = this.physics.add.group();
 
-  return Phaser.Geom.Intersects.RectangleToRectangle(boundsA, boundsB);
-}
-
-function spawnFood() {
-  const gridSize = 20;
-  const gridSizeX = config.width / gridSize;
-  const gridSizeY = config.height / gridSize;
-
-  let validCell = false;
-  let foodX, foodY;
-
-  while (!validCell) {
-    foodX = Phaser.Math.Between(0, gridSizeX - 1) * gridSize;
-    foodY = Phaser.Math.Between(0, gridSizeY - 1) * gridSize;
-
-    let overlap = false;
-    snake.getChildren().forEach((child) => {
-      if (child.x === foodX && child.y === foodY) {
-        overlap = true;
-      }
-    });
-
-    if (!overlap) {
-      validCell = true;
-    }
+  for (let i = 0; i < 3; i++) {
+    const snakePart = this.add.rectangle(160 + i * 20, 160, 20, 20, 0x00ff00);
+    snake.add(snakePart);
   }
 
-  food = this.add.rectangle(foodX, foodY, 20, 20, 0xff0000);
+  food = this.add.rectangle(
+    Phaser.Math.Between(1, 38) * 20,
+    Phaser.Math.Between(1, 28) * 20,
+    20,
+    20,
+    0xff0000
+  );
+
+  cursors = this.input.keyboard.createCursorKeys();
+
+  scoreText = this.add.text(16, 16, 'Score: 0', { fontSize: '32px', fill: '#ffffff' });
 }
 
-function eatFood(snakeHead, food) {
-  food.destroy();
-  spawnFood();
+function checkOverlap(spriteA, spriteB) {
+  const boundsA = spriteA.getBounds();
+  const boundsB = spriteB.getBounds();
 
-  const newPart = this.add.rectangle(0, 0, 20, 20, 0x00ff00);
-  snake.add(newPart);
-
-  score += 10;
-  scoreText.setText('Score: ' + score);
+  return Phaser.Geom.Intersects.RectangleToRectangle(boundsA, boundsB);
 }
+
+// Other functions...
