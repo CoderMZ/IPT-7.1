@@ -53,6 +53,14 @@ div.Main-Body-Container {
   flex-direction: row;
 }
 
-img.Body-Image {
-  margin: 20px;
+img.Body-Image-Left {
+  margin: 0px 100px;
+  width: auto;
+  height: 500px;
+}
+
+img.Body-Image-Right {
+  margin: 0px 100px;
+  width: auto;
+  height: 500px;
 }
