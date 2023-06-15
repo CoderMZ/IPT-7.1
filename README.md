@@ -15,7 +15,7 @@ After installation, run the following code as administrator in the project direc
 ### Navigation
 ![Alt text](./img/navi.png)
 
-Click ond "GAMES, "RIZZ" or the Logo to navigate the different sites
+Click on "GAMES, "RIZZ" or the Logo to navigate the different sites
 
 ## Contributor
 [Dines Nimalthas](https://github.com/Reavexx)
