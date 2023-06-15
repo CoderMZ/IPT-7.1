@@ -16,25 +16,21 @@ After installation, run the following code as administrator in the project direc
 ![Alt text](./img/navi.png)
 
 Click on "GAMES, "RIZZ" or the Logo to navigate the different sites
+## Target/actual comparison
+**Target status**
+* Project description: A precise description of the project, including a brief explanation of the website, the included mini-games and the Rizzbot.
+* Installation: A detailed guide to the installation and configuration of the website, mini-games and Rizzbot.
+* Usage: Information on how to use the website and mini-games, including instructions on how to interact with the Rizzbot.
+* Contributors:  All of the group should have achieved about the same amount.
+* Documentation: Links or references to extensive documentation, including instructions on how to develop mini-games and use the Rizzbot.
 
-
-## Soll-/Ist-Gegenüberstellung
-**Soll-Zustand**
-* Projektbeschreibung: Eine präzise Beschreibung des Projekts, einschließlich einer kurzen Erläuterung der Website, der enthaltenen Mini-Spiele und des Rizzbots.
-* Installation: Eine detaillierte Anleitung zur Installation und Konfiguration der Website, der Mini-Spiele und des Rizzbots.
-* Verwendung: Informationen zur Verwendung der Website und der Mini-Spiele, einschließlich einer Anleitung zur Interaktion mit dem Rizzbot.
-* Beitragende:  Alle der Gruppe sollen etwa gleich viel erreicht haben.
-* Dokumentation: Links oder Hinweise auf umfangreiche Dokumentation, einschließlich Anleitungen zur Entwicklung von Mini-Spielen und zur Verwendung des Rizzbots.
-
-**Ist-Zustand**
-* Projektbeschreibung: Eine kurze Zusammenfassung des Projekts, aber es fehlen detaillierte Informationen zu den enthaltenen Mini-Spielen und dem Rizzbot.
-* Installation: Eine grundlegende Anleitung zur Installation der Website ist vorhanden, aber es fehlen spezifische Anweisungen zur Konfiguration der Mini-Spiele und des Rizzbots.
-* Verwendung: Im Readme File steht was wie getan werden muss um unser Projekt zu verwenden.
-* Beitragende: Alle sind im moment in einer verschiedener arbeit zugewiesen.
-* Dokumentation: Es gibt keine Verweise oder Hinweise auf umfangreiche Dokumentation, einschließlich Anleitungen zur Entwicklung von Mini-Spielen und zur Verwendung des Rizzbots.
-
-
-## Contributor
+**Actual state**.
+* Project description: A brief summary of the project, but lacks detailed information on the mini-games included and the Rizzbot.
+* Installation: Basic instructions for installing the website are available, but specific instructions for configuring the mini-games and the Rizzbot are missing.
+* Usage: The readme file states what needs to be done and how to use our project.
+* Contributors: All are currently assigned to different work.
+* Documentation: There are no references or references to extensive documentation, including instructions for developing mini-games and using the Rizzbot.
+## Contributors
 [Dines Nimalthas](https://github.com/Reavexx)
 
 [Kevin Weder](https://github.com/KevinWe6)
