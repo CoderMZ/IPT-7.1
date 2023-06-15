@@ -1,6 +1,6 @@
 # SpieleLöwe
 
-SpieleLöwe&copy; is a free mini-games website where you can play a variety of games. Simply play online, without downloads or installations. Share your scores, compete against others and discover new content regularly. Spend your free time having fun and playing games on SpieleLöwe&copy;.
+SpieleLöwe is a free mini-games website where you can play a variety of games. Simply play online, without downloads or installations. Share your scores, compete against others and discover new content regularly. Spend your free time having fun and playing games on SpieleLöwe.
 
 ## Website
 Check out our games online at the [SpieleLöwe](https://spielelowe.ch/) website
