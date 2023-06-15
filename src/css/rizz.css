@@ -4,13 +4,55 @@ body
     background-color:black;
 }
 
-/* Header Styling */
-div.Header-Container
-{
+@font-face {
+    font-family: "Gameplay";
+    src: url("../fonts/Gameplay.ttf");
+  }
+  
+  
+  body{
+      margin: 0px;
+      padding: 0px;
+      background-color: black;
+  }
+  
+  a:visited{
+    color:white;
+    text-decoration: none;
+  }
+  a:link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+  ul.Header-Navigation-Container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
+    justify-content: space-between;
+    list-style: none;
+    background-color: black;
+    border: solid white;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul.Header-Navigation-Container li {
+    flex: 1;
+    font-family: "Gameplay";
+    font-size: xx-large;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  
+  img.Header-Logo {
+    height: 70px;
+    width: 70px;
+    margin-top: -17px;
+  }
 
 /* Body Styling */
 div.Body-Container
