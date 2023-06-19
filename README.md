@@ -30,6 +30,14 @@ Click on "GAMES, "RIZZ" or the Logo to navigate the different sites
 * Usage: The readme file states what needs to be done and how to use our project.
 * Contributors: All are currently assigned to different work.
 * Documentation: There are no references or references to extensive documentation, including instructions for developing mini-games and using the Rizzbot.
+
+**Snake Preview**
+
+https://github.com/CoderMZ/IPT-7.1/assets/56248619/0fc1a911-47df-4408-a7df-de2bb0dd403a
+
+* Project-State: There are a few problems (Snake isn't growing, Eating Food)
+* Finished: Losing Screen, Snake Movement, Food Spawn, UI itself
+
 ## Contributors
 [Dines Nimalthas](https://github.com/Reavexx)
 
