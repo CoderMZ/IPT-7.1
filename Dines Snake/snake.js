@@ -23,17 +23,21 @@ let food;
 let cursors;
 let score = 0;
 let scoreText;
-let startText; // Text for the starting screen
-let isGameStarted = false; // Flag to track game start
+let startText; 
+let isGameStarted = false; 
 
 function preload() {}
 
 function create() {
   // Add starting screen text
-  startText = this.add.text(220, 200, 'Press SPACE to start', { fontSize: '32px', fill: '#ffffff' });
+  startText = this.add.text(config.width / 2, config.height / 2, 'Press SPACE to start', { fontSize: '32px', fill: '#ffffff' });
+  startText.setOrigin(0.5);
 
   // Enable input for starting the game
   this.input.keyboard.on('keydown-SPACE', startGame, this);
+
+  // Load the logo image
+  this.load.image('logo', 'logo.png');
 }
 
 function update() {
@@ -116,4 +120,3 @@ function checkOverlap(spriteA, spriteB) {
   return Phaser.Geom.Intersects.RectangleToRectangle(boundsA, boundsB);
 }
 
-// Other functions...
