@@ -69,8 +69,8 @@ function update() {
 
     do {
       food.setPosition(
-        Phaser.Math.Between(1, 38) * 20,
-        Phaser.Math.Between(1, 28) * 20
+        Phaser.Math.Between(1, 38) * 19,
+        Phaser.Math.Between(1, 28) * 19
       );
     } while (checkOverlap(food, snake));
   }
