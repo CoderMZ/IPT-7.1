@@ -17,27 +17,34 @@ var config = {
 var game = new Phaser.Game(config);
 var amount;
 var counter;
+var clicker;
 
-function preload ()
-{
-    this.load.path = "../images/";
+function preload() {
+    this.load.path = "/src/images/";
     this.load.image('clicker', 'logo.png');
 }
 
-function create ()
-{
+function create() {
     amount = 0;
-    counter = this.add.text(30, 30, amount, {fontFamily: 'Gameplay'});
-    counter.setScale(3)
-    var clicker = this.physics.add.image(500, 0, 'clicker');
+    counter = this.add.text(30, 30, amount, { fontFamily: 'Gameplay' });
+    counter.setScale(3);
+    clicker = this.physics.add.image(500, 0, 'clicker');
     clicker.setScale(0.3);
     clicker.setCollideWorldBounds(true);
-    clicker.setBounce(0, 0.7);
+    clicker.setBounce(0.75, 0.75);
     clicker.setInteractive();
-    clicker.on('pointerdown', () => clicked());
+    this.input.on('pointerdown', clicked, this);
 }
 
-function clicked () {
+function clicked() {
     amount += 1;
     counter.setText(amount);
+    var clickerVelocityX = randomNumber(-1000, 1000);
+    var clickerVelocityY = randomNumber(-1000, 1000);
+    clicker.setVelocity(clickerVelocityX, clickerVelocityY);
+    
+}
+
+function randomNumber(min, max) {
+    return Math.random() * (max - min) + min;
 }
