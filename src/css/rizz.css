@@ -1,6 +1,12 @@
+/* Body Styling */
+body
+{
+    background-color:black;
+}
+
 @font-face {
     font-family: "Gameplay";
-    src: url("fonts/Gameplay.ttf");
+    src: url("../fonts/Gameplay.ttf");
   }
   
   
@@ -47,10 +53,12 @@
     width: 70px;
     margin-top: -17px;
   }
-  
-  /* Main Body CSS */
-  div.Example-Anim-Container
-  {
-      display: flex;
-      flex-direction: column;
-  }
+
+/* Body Styling */
+div.Body-Container
+{
+    margin: 100px;
+    border: solid white;
+}
+
+

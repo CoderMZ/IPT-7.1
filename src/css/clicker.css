@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Gameplay";
-    src: url("fonts/Gameplay.ttf");
+    src: url("../fonts/Gameplay.ttf");
   }
   
   
@@ -48,9 +48,3 @@
     margin-top: -17px;
   }
   
-  /* Main Body CSS */
-  div.Example-Anim-Container
-  {
-      display: flex;
-      flex-direction: column;
-  }
