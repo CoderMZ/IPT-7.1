@@ -64,3 +64,10 @@ img.Body-Image-Right {
   width: auto;
   height: 500px;
 }
+
+.Game-Container{
+  color: white;
+  font-family: "Gameplay";
+  text-align: center;
+  font-size: 25px;
+}
